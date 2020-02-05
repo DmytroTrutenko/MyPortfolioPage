@@ -31,7 +31,7 @@ body ul {
 }
 
 section {
-  padding: 50px 0 80px;
+  padding: 100px 0 80px;
 }
 
 .container {
@@ -98,7 +98,7 @@ section {
   border-radius: 10px;
   text-transform: uppercase;
   text-decoration: none;
-  transition: all 0.2s;
+  transition: all 0.3s ease-in-out;
 }
 .btn:hover {
   background-color: #fff8e1;
@@ -107,6 +107,44 @@ section {
 
 .btn-orange {
   border-color: #ffca28;
+  color: #ffca28;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #141414;
+  z-index: 99;
+}
+header .container {
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .logo {
+  width: 150px;
+  height: 70px;
+}
+header .container .logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+header .container .main-nav li {
+  margin-right: 20px;
+}
+header .container .main-nav li:last-child {
+  margin-right: 0;
+}
+header .container .main-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #5c5c5c;
+  transition: all 0.3s ease-in-out;
+}
+header .container .main-nav li a:hover {
   color: #ffca28;
 }
 
@@ -238,7 +276,7 @@ section {
   height: 100%;
   object-fit: cover;
   transform: scale(1.1);
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 .portfolio__items .item a span {
   position: absolute;
@@ -253,7 +291,7 @@ section {
   padding: 0 15px;
   opacity: 0;
   bottom: -46px;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 footer {
@@ -277,7 +315,7 @@ footer .info__items .item {
   padding-right: 70px;
 }
 footer .info__items .item .more {
-  display: block;
+  display: inline-block;
   margin-top: 15px;
 }
 footer .info__items .item .more i {

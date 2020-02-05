@@ -35,7 +35,7 @@ body {
 }
 
 section {
-  padding: 50px 0 80px;
+  padding: 100px 0 80px;
 }
 
 .container {
@@ -108,7 +108,7 @@ section {
   border-radius: 10px;
   text-transform: uppercase;
   text-decoration: none;
-  transition: all .2s;
+  transition: all .3s ease-in-out;
 
   &:hover {
     background-color: #fff8e1;
@@ -119,6 +119,53 @@ section {
 .btn-orange {
   border-color: #ffca28;
   color: #ffca28;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #141414;
+  z-index: 99;
+
+  .container {
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      width: 150px;
+      height: 70px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .main-nav {
+      li {
+        margin-right: 20px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          display: block;
+          text-decoration: none;
+          color: #5c5c5c;
+          transition: all .3s ease-in-out;
+          &:hover{
+            color: #ffca28;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 .main-screen {
@@ -280,7 +327,7 @@ section {
           height: 100%;
           object-fit: cover;
           transform: scale(1.1);
-          transition: all .3s;
+          transition: all .3s ease-in-out;
         }
 
         span {
@@ -296,7 +343,7 @@ section {
           padding: 0 15px;
           opacity: 0;
           bottom: -46px;
-          transition: all .3s;
+          transition: all .3s ease-in-out;
         }
       }
     }
@@ -328,7 +375,7 @@ footer {
       padding-right: 70px;
 
       .more {
-        display: block;
+        display: inline-block;
         margin-top: 15px;
 
         i {
