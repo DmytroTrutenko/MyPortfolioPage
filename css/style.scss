@@ -95,7 +95,8 @@ section {
 }
 
 .btn {
-  border: 1px solid #212121;
+  border: 1px solid #ffca28;
+  color: #ffca28;
   max-width: 200px;
   width: 100%;
   display: flex;
@@ -116,10 +117,6 @@ section {
   }
 }
 
-.btn-orange {
-  border-color: #ffca28;
-  color: #ffca28;
-}
 
 header {
   position: fixed;
@@ -134,7 +131,7 @@ header {
     justify-content: space-between;
 
     .logo {
-      width: 150px;
+      width: 70px;
       height: 70px;
 
       img {
@@ -158,7 +155,8 @@ header {
           text-decoration: none;
           color: #5c5c5c;
           transition: all .3s ease-in-out;
-          &:hover{
+
+          &:hover {
             color: #ffca28;
           }
         }
@@ -293,59 +291,100 @@ header {
 
   &__items {
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-content: space-between;
 
     .item {
       width: calc(100% / 3 - 20px);
+      margin-bottom: 20px;
+      margin-right: 20px;
       height: 400px;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
 
-
-      a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        position: relative;
-        overflow: hidden;
-
-        &:hover {
-          img {
-            transform: scale(1);
-          }
-
-          span {
-            bottom: 0;
-            opacity: 1;
-          }
+      &:last-child{
+        margin-right: 0;
+      }
+      &:hover {
+        img {
+          transform: scale(1);
+          filter: grayscale(1);
         }
 
-        img {
-          display: block;
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transform: scale(1.1);
-          transition: all .3s ease-in-out;
+        .fast-links {
+          visibility: visible;
+          opacity: 1;
         }
 
         span {
-          position: absolute;
-          width: 100%;
-          left: 0;
-          display: block;
-          background-color: #000000;
-          color: white;
-          font-size: 20px;
-          height: 46px;
-          line-height: 46px;
-          padding: 0 15px;
-          opacity: 0;
-          bottom: -46px;
-          transition: all .3s ease-in-out;
+          bottom: 0;
+          opacity: 1;
         }
       }
+
+      .fast-links {
+        padding: 0 30px;
+        z-index: 20;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 200px;
+        top: 50%;
+        margin-top: -100px;
+        left: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+
+        a {
+          margin-bottom: 7px;
+          text-decoration: none;
+          color: #fff;
+          background-color: #000;
+          display: block;
+          padding: 0 15px;
+          min-width: 250px;
+          min-height: 46px;
+          line-height: 46px;
+          text-align: center;
+          font-size: 18px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transform: scale(1.1);
+        transition: all .3s ease-in-out;
+      }
+
+      span {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        display: block;
+        background-color: #000000;
+        color: white;
+        font-size: 20px;
+        height: 46px;
+        line-height: 46px;
+        padding: 0 15px;
+        opacity: 0;
+        bottom: -46px;
+        transition: all .3s ease-in-out;
+      }
+
     }
   }
 }
@@ -356,7 +395,6 @@ footer {
 
   h3 {
     color: #5c5c5c;
-    text-decoration: underline;
   }
 
   p {
@@ -398,11 +436,12 @@ footer {
   }
 
   .my__links {
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding-top: 30px;
 
     a {
+      display: block;
       text-decoration: none;
       color: #5c5c5c;
 

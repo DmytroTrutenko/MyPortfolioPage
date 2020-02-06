@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="font-awesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 <header>
     <div class="container d-flex">
         <div class="logo">
-            <img src="img/logo.png" alt="logo">
+            <a href="#About_me"><img src="img/logo.png" alt="logo"></a>
         </div>
-        <ul class="main-nav d-flex">
+        <ul id="main-nav" class="main-nav d-flex">
             <li><a href="#About_me">About me</a></li>
             <li><a href="#What_i_do">What i do</a></li>
             <li><a href="#Portfolio">Portfolio</a></li>
@@ -42,10 +44,10 @@
                         <li><a href="https://www.linkedin.com/in/dtjs/"><i class="fab fa-linkedin-in"></i></a></li>
                         <li><a href="https://github.com/DmytroTrutenko"><i class="fab fa-github"></i></a></li>
                     </ul>
-                    <a href="https://drive.google.com/open?id=1IVtmDj98UZ2JkCQnudnFih78NpGAJnn7" class="btn btn-orange">View CV</a>
+                    <a href="https://drive.google.com/open?id=1IVtmDj98UZ2JkCQnudnFih78NpGAJnn7" class="btn">View CV</a>
                 </div>
                 <div class="img">
-                    <img src="img/avafinal.png" alt="img">
+                    <img src="img/ava.png" alt="img">
                 </div>
             </div>
         </div>
@@ -97,22 +99,64 @@
             <p class="main-title"><span>P</span>ortfolio</p>
             <div class="portfolio__items d-flex">
                 <div class="item">
-                    <a href="https://dmytrotrutenko.github.io/Social-React/#/login">
-                        <img src="img/social.jpg" alt="Social">
-                        <span>React, Redux, Axios, Thunk</span>
-                    </a>
+                    <div class="fast-links d-flex">
+                        <a href="https://dmytrotrutenko.github.io/Social-React/#/login">Visit Website</a>
+                        <a href=https://github.com/DmytroTrutenko/Social-React>Source code</a>
+                    </div>
+                    <img src="img/social.jpg" alt="Social">
+                    <span>React, Redux, Axios, Thunk</span>
                 </div>
                 <div class="item">
-                    <a href="https://dmytrotrutenko.github.io/StarWarsLP">
-                        <img src="img/starwars.jpg" alt="starwars">
-                        <span>HTML, CSS, jQuery</span>
-                    </a>
+                    <div class="fast-links d-flex">
+                        <a href="https://dmytrotrutenko.github.io/StarWarsLP">Visit Website</a>
+                        <a href=https://github.com/DmytroTrutenko/StarWarsLP>Source code</a>
+                    </div>
+                    <img src="img/starwars.jpg" alt="starwars">
+                    <span>HTML, CSS, jQuery</span>
                 </div>
-                <div class="item">
-                    <a href="https://dmytrotrutenko.github.io/JSpeed">
-                        <img src="img/jspeed.jpg" alt="jspeed">
-                        <span>HTML, CSS, JavaScript</span>
-                    </a>
+                <div class="item d-flex">
+                    <div class="fast-links d-flex">
+                        <a href="https://dmytrotrutenko.github.io/JSpeed">Visit Website</a>
+                        <a href="https://github.com/DmytroTrutenko/JSpeed">Source code</a>
+                    </div>
+                    <img src="img/jspeed.jpg" alt="jspeed">
+                    <span>HTML, CSS, JavaScript</span>
+                </div>
+                <div class="item d-flex">
+                    <div class="fast-links d-flex">
+                        <a href="https://dmytrotrutenko.github.io/GamingLP/">Visit Website</a>
+                        <a href="https://github.com/DmytroTrutenko/GamingLP">Source code</a>
+                    </div>
+                    <img src="img/gamingLP.jpg" alt="gamelp">
+                    <span>HTML, CSS</span>
+                </div>
+                <div class="item d-flex">
+                    <div class="fast-links d-flex">
+                        <a href="https://github.com/DmytroTrutenko/insta_react">Source code</a>
+                    </div>
+                    <img src="img/instaReact.jpg" alt="instaReact">
+                    <span>React, Json-server</span>
+                </div>
+                <div class="item d-flex">
+                    <div class="fast-links d-flex">
+                        <a href="https://github.com/DmytroTrutenko/task_bd">Source code</a>
+                    </div>
+                    <img src="img/task_bd.jpg" alt="taskbd">
+                    <span>PHP, Apache, MySQL</span>
+                </div>
+                <div class="item d-flex">
+                    <div class="fast-links d-flex">
+                        <a href="https://github.com/DmytroTrutenko/calculatorPHP">Source code</a>
+                    </div>
+                    <img src="img/calculatorPHP.jpg" alt="calc">
+                    <span>PHP, Apache</span>
+                </div>
+                <div class="item d-flex">
+                    <div class="fast-links d-flex">
+                        <a href="https://github.com/DmytroTrutenko/GuessTheNumber">Source code</a>
+                    </div>
+                    <img src="img/gueesTheNumber.jpg" alt="img">
+                    <span>PHP, Apache</span>
                 </div>
             </div>
         </div>
@@ -139,7 +183,6 @@
                 </div>
             </div>
             <div class="my__links d-flex">
-                <a href="https://drive.google.com/open?id=1IVtmDj98UZ2JkCQnudnFih78NpGAJnn7"> <i class="far fa-address-card"></i>myCV</a>
                 <a href="https://drive.google.com/open?id=1IVtmDj98UZ2JkCQnudnFih78NpGAJnn7"> <i class="fas fa-code"></i>Developer by <br>Dmitry
                     Trutenko</br></a>
             </div>
