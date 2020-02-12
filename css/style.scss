@@ -458,6 +458,7 @@ footer {
   }
 }
 
+
 @media (max-width: 1200px) {
   .portfolio__items .item {
     width: calc(100% / 2 - 15px);
@@ -474,9 +475,9 @@ footer {
 
 @media (max-width: 991px) {
   .main-screen__items .info {
-      width: 100%;
-    }
-  .main-screen__items .img{
+    width: 100%;
+  }
+  .main-screen__items .img {
     display: none;
   }
   .advantages .skills__items div {
@@ -495,7 +496,10 @@ footer {
 }
 
 @media (max-width: 767px) {
-
+  .main-screen__items .info {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 @media (max-width: 575px) {

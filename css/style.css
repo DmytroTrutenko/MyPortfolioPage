@@ -418,5 +418,11 @@ footer .my__links a:hover {
     margin-bottom: 70px;
   }
 }
+@media (max-width: 767px) {
+  .main-screen__items .info {
+    align-items: center;
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
