@@ -503,6 +503,22 @@ footer {
 }
 
 @media (max-width: 575px) {
+  header .container .main-nav li {
+    margin-right: 5px;
+  }
+  header .container .main-nav li a {
+    font-size: 12px;
+  }
+  .portfolio__items .item {
+    width: 100%;
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+  }
+  .info__items {
+    .item:first-child{
+      display: none;
+    }
+  }
 
 }
 
